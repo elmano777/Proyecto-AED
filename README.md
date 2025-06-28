@@ -2,6 +2,6 @@
 ## Estructura: Treap (Heap + Btree)
 Integrantes:
   - Rolandito
-  - C
+  - Tamy Flores
   - D
 blablabla
