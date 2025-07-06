@@ -2,7 +2,8 @@
 #define RESERVATIONROUTES_H
 
 #include <crow.h>
+#include <crow/middlewares/cors.h>
 
-void setupReservationRoutes(crow::SimpleApp& app);
+void setupReservationRoutes(crow::App<crow::CORSHandler>& app);
 
 #endif
