@@ -16,8 +16,15 @@ std::string ReservationController::createReservation(const std::string& datetime
 }
 
 bool ReservationController::deleteReservation(const std::string& key) {
-    reservationTreap.deleteKey(key);
-    return true;
+    if (reservationTreap.search(key)) {
+        reservationTreap.deleteKey(key);
+        return true;
+    }
+    return false;
+}
+
+bool ReservationController::searchReservation(const std::string& key) {
+    return reservationTreap.search(key);
 }
 
 std::vector<std::string> ReservationController::getAllReservations() {
