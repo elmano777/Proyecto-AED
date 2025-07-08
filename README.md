@@ -8,7 +8,7 @@
 
 ## Descripción del Proyecto
 
-Este proyecto implementa un **sistema de gestión de reservas** utilizando la estructura de datos **Treap** (Tree + Heap). Un Treap combina las propiedades de un árbol binario de búsqueda (BST) con las de un heap, donde cada nodo tiene una clave (key) y una prioridad (priority).
+Este proyecto implementa un **sistema de reservas** utilizando la estructura de datos **Treap** (Tree + Heap). Un Treap combina las propiedades de un árbol binario de búsqueda (BST) con las de un heap, donde cada nodo tiene una clave (key) y una prioridad (priority).
 
 ### Arquitectura del Sistema
 
@@ -150,7 +150,7 @@ curl http://localhost:8081/reserva/tree
 - **Auto-balanceado**: Las prioridades mantienen el árbol balanceado
 
 ### Propiedades
-- **Propiedad BST**: Para cualquier nodo, todos los nodos del subárbol izquierdo tienen claves menores
+- **Propiedad BST**: Para cualquier nodo, todos los nodos del subárbol izquierdo tienen claves menores, caso contrario para el derecho donde estaran las claves mayores
 - **Propiedad Heap**: Para cualquier nodo, su prioridad es mayor que la de sus hijos
 
 ## Frontend
@@ -159,6 +159,7 @@ El frontend está desarrollado en Angular y se encuentra en el repositorio separ
 - **URL**: https://github.com/elmano777/cpp_front.git
 - **Tecnología**: Angular 19.2.13
 - **Puerto**: 4200 (por defecto)
+- **Instalacion**: Se necesita instalar Angular CLI (npm install -g @angular/cli)
 
 ### Ejecutar Frontend
 ```bash
@@ -179,4 +180,4 @@ ng serve
 - **CORS**: Habilitado
 - **Formato de Clave**: `datetime_clientName`
 - **Prioridades**: Generadas aleatoriamente (1-1000)
-- **Ordenamiento**: Las reservas se ordenan cronológicamente usando inorder traversal
+- **Ordenamiento**: Las reservas se ordenan cronológicamente usando inorder

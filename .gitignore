@@ -2,3 +2,7 @@
 build
 .cache/*
 .cache
+.idea
+.zed
+.idea/
+.cmake-build-debug
